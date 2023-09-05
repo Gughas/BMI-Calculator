@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/faf15615fb.js" crossorigin="anonymous"></script>
+    <title>BMI - Calculator</title>
+</head>
+<body>
+    
+    <main class="container">
+
+        <section id="left-card">
+            <img src="./img/fitness.svg" alt="Fitness">
+        </section>
+
+        <section class="calculator">
+            <form class="formulario">
+                <div class="title">
+                    <h1>BMI - Calculator</h1>
+                </div>
+
+                <div class="input-box">
+                    <label for="input-weight">Weight in Kg</label>
+                        
+                    <div class="input-field" id="weight">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="input-weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="input-height">Height in M</label>
+                        
+                    <div class="input-field" id="height">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="text" id="input-height" required>
+                        <span>M</span>
+                    </div>
+                </div>
+                
+                <button id="calculate">Calculate</button>
+
+            </form>
+
+            <div class="hidden" id="infos">
+                <div class="result">
+                    <div class="bmi">
+                        <span class="value"></span>
+                        <span>Your BMI</span>
+                    </div>
+
+                    <div class="description">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-info">
+                <a href="https://www.tuasaude.com/imc/" target="_blank">
+                    More information about BMI here
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
